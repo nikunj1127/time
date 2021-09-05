@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        margin: 10px;
+        padding: 40px;
+        background-color: aquamarine;
+        border: 2px solid grey;
+        border-radius: 10px;
+        align-items: center;
+        
+    }
+</style>
+<body>
+<div class="container">
+    time now is <span id="time"></span>
+</div>
+<script>
+    function greet(){
+    console.log("hello nikunj" );
+    }
+
+//    timeOut = setTimeout(greet, 1000, " rathi");
+//    console.log(timeOut);
+//    clearTimeout(timeOut);
+// intervalId = setInterval(greet, 1000);
+// clearInterval(intervalId);
+function displayTime(){
+    time = new Date();
+    console.log(time)
+    document.getElementById('time').innerHTML =time;
+}
+setInterval(displayTime, 1000);
+</script>
+</body>
+</html>
